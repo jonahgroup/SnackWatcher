@@ -1,7 +1,7 @@
 # Snack Watcher
 Snack Watcher team has a blog site at
 
-![Snack Watcher Blog](https://jonahgroup.github.io/SnackWatcher)
+[Snack Watcher Blog](https://jonahgroup.github.io/SnackWatcher https://jonahgroup.github.io/SnackWatcher)
 
 to see the latest development articles, interesting researches and on-going discussions.
 
