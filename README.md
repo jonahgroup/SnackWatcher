@@ -1,3 +1,10 @@
+# Snack Watcher
+Snack Watcher team has a blog site at
+
+![Snack Watcher Blog](https://jonahgroup.github.io/SnackWatcher)
+
+to see the latest development articles, interesting researches and on-going discussions.
+
 # Snack Watcher Web
 Before diving into the technical details, a brief overview of how Snack Watcher could benefit the use case of watching a "Snack Table". Also, much effort has been devoted to make it working well with a Raspberry Pi 2 or 3, such that the cost of setup will be minimal and elegant in the geekiest way. The term `snack-web` as a synonym as "Snack Watcher Web" in here.
 
