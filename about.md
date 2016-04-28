@@ -18,11 +18,11 @@ It is open source in hope of advancing the sharing spirit and snacking fun withi
 
 * Webcam connected to watch at the "Snack Table"
 
-![Snack Watcher Setup 2](assets/Snack_Watcher_Setup_02.jpg)
+![Snack Watcher Setup 2]({{ site.baseurl }}/assets/Snack_Watcher_Setup_02.jpg)
 
 * `snack-web` captured image sample with blob status (green means New, red means removed) and blob classification (they looks like "package" from classifier training)
 
-![Snack Web Image Capture](assets/Snack_Watcher_Capture.png)
+![Snack Web Image Capture]({{ site.baseurl }}/assets/Snack_Watcher_Capture.png)
 
 ## snack-web
 `snack-web` is a web application showing the result of snack watching, which has
@@ -41,8 +41,8 @@ The following illustrated the front page of `snack-web`, the front page menu ite
 - **Snap**: snap a snack image from the camera now
 - **Teach**: (Require advanced setup) Currently still under heavy development, the teaching module is designed to interactively classify snack for future training. This required classifier setup to work.
 
-![Snack Web Front Page](assets/snack_web_link_page_sm.png)
+![Snack Web Front Page]({{ site.baseurl }}/assets/snack_web_link_page_sm.png)
 
 For each snack image capture, it collects the set of processing stage images for debugging and understanding how the snacks are identified. For each blob that the system detected, it will be stored for displaying and training. The colour coded blobs represent, *green* is the new detected blob, *yellow* is the stationary blob, and *red* is the removed blob. By click on each image bar, a larger image will be shown for detail inspections.
 
-![Snack Web Item Display](assets/snack_web_item_display_sm.png)
+![Snack Web Item Display]({{ site.baseurl }}/assets/snack_web_item_display_sm.png)
