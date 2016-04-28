@@ -37,12 +37,10 @@ subscribe_widget: off
 copyright_notice: on
 
 # Social settings
-github_username : snackwatcher
-twitter_username : Snack_Watcher
-youtube_username : UC_y9pExhrufOEeucdHVi-Sw
-facebook_username : snack.watcher
-reddit_username : snackwatcher
-stackoverflow_username : 6242759/snack-watcher
+github_username : jonahgroup/SnackWatcher
+twitter_username : snack_watcher
+facebook_username : SnackWatcher
+reddit_username : SnackWatcher
 rss_username : feed.xml
 
 # Mailchimp.com - Email subscribtion settings
@@ -52,7 +50,7 @@ rss_username : feed.xml
 
 # Formspreee.io - Contact form settings
 # Note: submit form once to activate
-email: snackwatcher@gmail.com
+email: snackwatcher@jonahgroup.com
 
 # Build settings
 markdown: kramdown
