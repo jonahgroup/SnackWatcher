@@ -1,4 +1,9 @@
 # Snack Watcher
+Starting as a [Jonah Group](http://www.jonahgroup.com) working group project, **Snack Watcher** is designed to watch the company's "Snack Table". If there is some new "Snack" presented on the "Snack Table", it could be used to report the event onto a chat channels, email or messaging saying "Snack Happened!", posting an image and trying to classify the snacks that it observed.
+
+It is open source in hope of advancing the sharing spirit and snacking fun within your company!
+
+## Snack Watcher Blog
 **Snack Watcher Team** has a blog site at
 
 [Snack Watcher Blog](https://jonahgroup.github.io/SnackWatcher)
