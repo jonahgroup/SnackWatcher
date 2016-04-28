@@ -2,7 +2,7 @@
 title: Snack Watcher Blog
 meta_description: Blog
 baseurl: "" # Subpath, e.g. /blog/
-url: "http://jonahgroup.github.io/Snackwatcher" # Base protocol and hostname
+url: "http://jonahgroup.github.io/SnackWatcher" # Base protocol and hostname
 paginate: 5 # How many posts to show per page
 
 # External Pages
