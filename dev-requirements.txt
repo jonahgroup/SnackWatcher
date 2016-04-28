@@ -1,0 +1,5 @@
+# for ipython notebook
+tornado
+pyzmq
+# for deployment
+supervisor

@@ -1,0 +1,227 @@
+/*
+Jonah Colour Scheme
+
+blue: #0770B7
+light blue: #80C1E2
+grey: #949BA0
+yellow: #FED050
+*/
+
+* {
+    font-family: 'open_sans', Arial, sans-serif;
+}
+
+body {
+    background-color: #EEE;
+    color: #444;
+}
+
+p {
+    font-size: 1.3em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-align: center;
+    font-weight: bold;
+}
+
+#logo-image {
+    height: 10rem;
+    border: none;
+}
+
+#logo-image-small {
+  border: none;
+}
+
+#logo-link {
+    display: inline-block;
+    vertical-align: top;
+    float: left;
+}
+
+#navigation-button-container {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#navigation-header {
+    background-color: #0770B7;
+    padding: 2rem 0;
+}
+
+.navigation-button {
+    display: inline-block;
+    height: 4rem;
+    margin-left: 2rem;
+    line-height: 4rem;
+}
+
+.navigation-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+.navigation-link:hover {
+    color: #FED050;
+    text-decoration: none;
+}
+.navigation-link:focus {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navigation-link:active {
+    color: #FED050;
+    text-decoration: none;
+}
+
+.navigation-link.active {
+    color: #FED050;
+    text-decoration: none;
+}
+
+.navbar-search {
+    margin: 1rem 0;
+}
+
+.navigation-buttons {
+    margin-top: 1rem;
+}
+
+.search-query {
+    height: 4rem;
+    font-size: 1.7rem;
+    padding-left: 0.5rem;
+}
+
+#search-button {
+    height: 4rem;
+    width: 4rem;
+    padding: 0;
+    background-color: #0770B7;
+    border: solid 2px #fff;
+    color: #fff;
+}
+
+td.image-thumbnail img {
+    display: block;
+    max-width: 17em;
+    max-height: 17em;
+    width: auto;
+    height: auto;
+    border-radius: 2px;
+    border: 2px solid #0770B7;
+}
+
+/*
+HORIZONTAL ACCORDION
+source: http://blogs.sitepointstatic.com/examples/tech/css3-target/accordionhorz.html
+*/
+article.accordion {
+    display: block;
+    width: 55em;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.11);
+    overflow: auto;
+    border-radius: 5px;
+    box-shadow: 0 3px 3px rgba(0,0,0,0.3);
+}
+article.accordion section {
+    position: relative;
+    display: block;
+    float: left;
+    width: 2em;
+    height: 12em;
+    margin: 0.5em 0 0.5em 0.5em;
+    color: #333;
+    background-color: #0770B7;
+    overflow: hidden;
+    border-radius: 3px;
+}
+article.accordion section.blob-new { background-color: #537d3c; }
+article.accordion section.blob-duplicate { background-color: #c67e00; }
+article.accordion section.blob-removed { background-color: #b72f3e; }
+article.accordion section div {
+    position: absolute;
+    font-size: 1em;
+    font-weight: normal;
+    width: 12em;
+    height: 2em;
+    top: 12em;
+    left: 0;
+    text-indent: 1em;
+    padding: 0;
+    margin: 0;
+    color: #ddd;
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+article.accordion section div a {
+    display: block;
+    width: 100%;
+    line-height: 2em;
+    text-decoration: none;
+    color: inherit;
+    outline: 0 none;
+}
+article.accordion section:target {
+    width: 12em;
+    padding: 0 1em;
+    color: #333;
+    background-color: #fff;
+}
+article.accordion section:target div {
+    position: static;
+    font-size: 0.7em;
+    text-indent: 0;
+    color: #333;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+article.accordion section,
+article.accordion section div {
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+article.accordion section img {
+    display: block;
+    max-width: 1.55em;
+    max-height: 1.55em;
+    width: auto;
+    height: auto;
+}
+article.accordion section:target img {
+    display: block;
+    max-width: 7.5em;
+    max-height: 7.5em;
+    width: auto;
+    height: auto;
+    border-radius: 2px;
+    border: 2px solid #0770B7;
+}
+article.accordion section.blob-new:target img { border-color: #537d3c; }
+article.accordion section.blob-duplicate:target img { border-color: #c67e00; }
+article.accordion section.blob-removed:target img { border-color: #b72f3e; }

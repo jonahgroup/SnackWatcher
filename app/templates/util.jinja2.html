@@ -1,0 +1,36 @@
+{%- macro link_tag(location) -%}
+        <link rel="stylesheet" href="/static/css/{{ location }}.css">
+{%- endmacro -%}
+
+{%- macro script_tag(location) -%}
+        <script src="/static/js/{{ location }}.js"></script>
+{%- endmacro -%}
+
+{%- macro static_image_tag(imageName, className, title) -%}
+        <img src="/static/images/{{ imageName }}" class="{{ className }}" title="{{ title }}">
+{%- endmacro -%}
+
+{%- macro tracked_link(title, url) -%}
+        <a href="{{ url_for("web.click", url=url) }}">{{ title }}</a>
+{%- endmacro -%}
+
+{%- macro linked_image(title, url) -%}
+        <a href="{{ url }}" target="_blank"><img src="{{ url }}" title="{{ title }}"></a>
+{%- endmacro -%}
+
+{%- macro image_accordion(image_id, transforms, blobs) -%}
+        <article class="accordion">
+        {% for transform in transforms %}
+            <section id="{{ image_id }}_t{{ loop.index }}" class="transform">
+                <div><a href="#{{ image_id }}_t{{ loop.index }}">{{ transform.title }}</a></div>
+                <p>{{ linked_image(transform.title, transform.img_url) }}</p>
+            </section>
+        {% endfor %}
+        {% for blob in blobs %}
+            <section id="{{ image_id }}_b{{ loop.index }}" class="blob-{{ blob.state }}">
+                <div><a href="#{{ image_id }}_b{{ loop.index }}">{{ blob.title }}</a></div>
+                <p>{{ linked_image(blob.title, blob.img_url) }}</p>
+            </section>
+        {% endfor %}
+        </article>
+{%- endmacro -%}

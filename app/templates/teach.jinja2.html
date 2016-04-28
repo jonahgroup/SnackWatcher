@@ -1,0 +1,22 @@
+{% extends 'layout.jinja2.html' %}
+
+{% block title %}Teaching{% endblock %}
+
+{% block css %}
+        {{ link_tag('teach') }}
+{% endblock %}
+
+{% block body %}
+            <div id="body-teach">
+                <h1>HELP!</h1>
+                <p>Help us teach Marvin! Sure, he's a robot. But he isn't always that smart...</p>
+                <p>So how can you help? Simple. In the drop-down lists below, just select the category that best describes the object next to it. With your help, Marvin can learn what snacks look like, and he'll give us more accurate snack reports in the future!</p>
+                <button type="button" class="btn btn-primary" id="reload-images-button">RELOAD IMAGES</button>
+                <div id="image-classification-row" class="row">
+                </div>
+            </div>
+{% endblock %}
+
+{% block js %}
+        {{ script_tag('teach') }}
+{% endblock %}

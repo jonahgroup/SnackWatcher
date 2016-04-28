@@ -1,0 +1,14 @@
+{% extends 'layout.jinja2.html' %}
+
+{% block title %}Failure!{% endblock %}
+
+{% block css %}
+        {{ link_tag('main') }}
+{% endblock %}
+
+{% block body %}
+            <div>
+                <h2>Error!</h2>
+                <p>{{ msg }}</p>
+            </div>
+{% endblock %}

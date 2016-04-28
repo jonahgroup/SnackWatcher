@@ -1,0 +1,16 @@
+lib-cov
+*.seed
+*.log
+*.csv
+*.out
+*.pid
+*.gz
+*.pyc
+.DS_Store
+
+pids
+logs
+results
+snack-env
+
+npm-debug.log
