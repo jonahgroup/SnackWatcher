@@ -17,8 +17,8 @@ gems: [jekyll-paginate]
 google_analytics: UA-76691604-1
 
 # Author settings
-author_name: Brotherhood of Snack Watcher
-author_description: Snack Watcher Blog
+author_name: Snack Watcher
+author_description: Snack Watcher Brotherhood Blog
 author_image: images/avtar.gif
 author_image_width: 128
 author_image_height: 128
