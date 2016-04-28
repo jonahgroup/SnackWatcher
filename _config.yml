@@ -1,7 +1,7 @@
 # Site settings
 title: Snack Watcher Blog
 meta_description: Blog
-baseurl: "/SnackWatcher/" # Subpath, e.g. /blog/
+baseurl: "/SnackWatcher" # Subpath, e.g. /blog
 url: "http://jonahgroup.github.io" # Base protocol and hostname
 paginate: 5 # How many posts to show per page
 
@@ -19,7 +19,7 @@ google_analytics: UA-76691604-1
 # Author settings
 author_name: Brotherhood of Snack Watcher
 author_description: Snack Watcher Blog
-author_image: /images/avtar.gif
+author_image: images/avtar.gif
 author_image_width: 128
 author_image_height: 128
 author_image_mime: image/gif
