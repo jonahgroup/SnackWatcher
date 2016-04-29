@@ -14,7 +14,7 @@ an image and trying to classify the snacks that it observed.
 
 It is open source in hope of advancing the sharing spirit and snacking fun within your company!
 
-[Snack Watcher Repo](https://github.com/jonahgroup/SnackWatcher)
+[Snack Watcher Github Repo](https://github.com/jonahgroup/SnackWatcher)
 
 * Webcam connected to watch at the "Snack Table"
 
