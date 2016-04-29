@@ -134,6 +134,13 @@ This will install orange in /home/<username>/.local/lib/pythonX.Y/site-packages/
 
 ## Computer Vision Projects for Inspirations
 
+### Snack Watching
+Snack Watcher is designed to watch the company's "Snack Table". If there is
+some new "Snack" presented on the "Snack Table", it could be used to report the
+event onto a chat channels, email or messaging saying "Snack Happened!", posting an image and trying to classify the snacks that it observed.
+
+<https://github.com/jonahgroup/SnackWatcher>
+
 ### A Fruit Classifier
 An inspiring image recognition project that classifies fruits.
 
