@@ -4,7 +4,7 @@ Starting as a [Jonah Group](http://www.jonahgroup.com) working group project, **
 It is open source in hope of advancing the sharing spirit and snacking fun within your company!
 
 ## Snack Watcher Blog
-**Snack Watcher Team** has a blog site at
+**Snack Watcher Team** has a blog site hosted at
 
 [Snack Watcher Blog](https://jonahgroup.github.io/SnackWatcher)
 
