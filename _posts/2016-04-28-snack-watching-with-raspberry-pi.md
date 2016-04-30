@@ -1,28 +1,38 @@
 ---
-layout: page
-title: About
-date: 2016-04-28 08:31:00
-permalink: /about/
+layout: post
+title: 'Snack Watching with Raspberry Pi'
+permalink: 'snack-watching-with-raspberry-pi'
+author: Benny Cheung
+tags:
+  - SnackWatcher
+  - Computer Vision
+  - RaspberryPi
+  - OpenCV
+  - SimpleCV
+  - Python
+  - RESTful API
+categories:
+  - Posts
+cover: images/snack-watching-with-raspberry-pi/cover.jpg
 ---
-# Snack Watcher
-
+<!--excerpt.start-->
 Starting as a [Jonah Group](http://www.jonahgroup.com) fun project,
 **Snack Watcher** is designed to watch the company's "Snack Table". If there is
 some new "Snack" presented on the "Snack Table", it could be used to report the
 event onto a chat channels, email or messaging saying "Snack Happened!", posting
-an image and trying to classify the snacks that it observed.
-
-It is open source in hope of advancing the sharing spirit and snacking fun within your company!
+an image and trying to classify the snacks that it observed. It supports both as
+web site for interactive snack viewing and RESTful API for programmatic snack querying.
+<!--excerpt.end-->
 
 [Snack Watcher Github Repo](https://github.com/jonahgroup/SnackWatcher)
 
 * Webcam connected to watch at the "Snack Table"
 
-![Snack Watcher Setup 2]({{ site.baseurl }}/assets/Snack_Watcher_Setup_02.jpg)
+![Snack Watcher Setup 2]({{ site.baseurl }}/images/snack-watching-with-raspberry-pi/Snack_Watcher_Setup_02.jpg)
 
 * `snack-web` captured image sample with blob status (green means New, red means removed) and blob classification (they looks like "package" from classifier training)
 
-![Snack Web Image Capture]({{ site.baseurl }}/assets/Snack_Watcher_Capture.png)
+![Snack Web Image Capture]({{ site.baseurl }}/images/snack-watching-with-raspberry-pi/Snack_Watcher_Capture.png)
 
 ## snack-web
 `snack-web` is a web application showing the result of snack watching, which has
@@ -41,11 +51,11 @@ The following illustrated the front page of `snack-web`, the front page menu ite
 - **Snap**: snap a snack image from the camera now
 - **Teach**: (Require advanced setup) Currently still under heavy development, the teaching module is designed to interactively classify snack for future training. This required classifier setup to work.
 
-![Snack Web Front Page]({{ site.baseurl }}/assets/snack_web_link_page_sm.png)
+![Snack Web Front Page]({{ site.baseurl }}/images/snack-watching-with-raspberry-pi/snack_web_link_page_sm.png)
 
 For each snack image capture, it collects the set of processing stage images for debugging and understanding how the snacks are identified. For each blob that the system detected, it will be stored for displaying and training. The colour coded blobs represent, *green* is the new detected blob, *yellow* is the stationary blob, and *red* is the removed blob. By click on each image bar, a larger image will be shown for detail inspections.
 
-![Snack Web Item Display]({{ site.baseurl }}/assets/snack_web_item_display_sm.png)
+![Snack Web Item Display]({{ site.baseurl }}/images/snack-watching-with-raspberry-pi/snack_web_item_display_sm.png)
 
 ## RESTful API
 <http://snack-web:8000/api>
