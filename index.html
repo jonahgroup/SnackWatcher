@@ -30,7 +30,7 @@ layout: default
 		{% endcapture %}
 
 		{% if excerpt_words != content_words %}
-		<p><a class="btn btn-sm btn-primary" href="{{ post.url }}#read-more" role="button" style="float: right;">Read more <i class="fa fa-arrow-circle-right"></i></a>
+		<p><a class="btn btn-sm btn-primary" href="{{ site.baseurl }}/{{ post.url }}#read-more" role="button" style="float: right;">Read more <i class="fa fa-arrow-circle-right"></i></a>
 		</p>
 		{% endif %}
 	</p>
