@@ -6,7 +6,7 @@ It is open source in hope of advancing the sharing spirit and snacking fun withi
 ## Snack Watcher Blog
 **Snack Watcher Team** has a blog site hosted at
 
-[Snack Watcher Blog](https://jonahgroup.github.io/SnackWatcher)
+![Snack Watcher Logo](assets/SnackWatcher.gif) [Snack Watcher Blog](https://jonahgroup.github.io/SnackWatcher)
 
 posting the latest development articles, interesting researches and on-going discussions on the Snack Watcher project.
 
