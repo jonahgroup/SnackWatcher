@@ -40,7 +40,7 @@ All images referenced in the post should be placed in `images` directory, and re
 You can install Jekyll locally, and serve the pages locally by running (--baseurl to override the configured site URL to nothing, make it able to run locally with all the links correctly points to localhost),
 
 ```
-  jekyll server --baseurl ""
+  jekyll serve --baseurl ""
 ```
 
 Now, you can navigate to `localhost:4000` to view your blog pages.
