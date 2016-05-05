@@ -4,65 +4,26 @@ title: About
 date: 2016-04-28 08:31:00
 permalink: /about/
 ---
-# Snack Watcher
+# About Snack Watcher
 
-Starting as a [Jonah Group](http://www.jonahgroup.com) fun project,
-**Snack Watcher** is designed to watch the company's "Snack Table". If there is
-some new "Snack" presented on the "Snack Table", it could be used to report the
-event onto a chat channels, email or messaging saying "Snack Happened!", posting
-an image and trying to classify the snacks that it observed.
+Starting as a fun [Jonah Group](http://www.jonahgroup.com) project,
+the **Snack Watcher** is designed to watch the company's "Snack Table". If there are
+some new "Snacks" presented on the "Snack Table", it can be used to report the
+event onto chat channels, emails or messages saying "Snack Happened!", posting
+an image and trying to classify the snacks that it observed. It supports both as
+web site for interactive snack viewing and RESTful API for programmatic snack querying.
 
 It is open source in hope of advancing the sharing spirit and snacking fun within your company!
 
 [Snack Watcher Github Repo](https://github.com/jonahgroup/SnackWatcher)
 
-* Webcam connected to watch at the "Snack Table"
+# About Snack Watcher's Watcher
 
-![Snack Watcher Setup 2]({{ site.baseurl }}/assets/Snack_Watcher_Setup_02.jpg)
-
-* `snack-web` captured image sample with blob status (green means New, red means removed) and blob classification (they looks like "package" from classifier training)
-
-![Snack Web Image Capture]({{ site.baseurl }}/assets/Snack_Watcher_Capture.png)
-
-## snack-web
-`snack-web` is a web application showing the result of snack watching, which has
-been designed to configure and run with Raspberry Pi 2 or 3. `snack-web` could
-be driven, either manually (via Web) or programmatically (via RESTful API) to
-take pictures and push the snapshots into the `static/images` directory. The
-RESTful API approach to programmatically watch and return the images should be
-the key feature to integrate with a system, providing greater utilities to
-report the snack status.
-
-### snack-web Front Page
-The following illustrated the front page of `snack-web`, the front page menu items are listed:
-
-- **Links**: display the last N snack captured image and it's processing stages
-- **Calibrate**: take a background image for calibrating the background colour
-- **Snap**: snap a snack image from the camera now
-- **Teach**: (Require advanced setup) Currently still under heavy development, the teaching module is designed to interactively classify snack for future training. This required classifier setup to work.
-
-![Snack Web Front Page]({{ site.baseurl }}/assets/snack_web_link_page_sm.png)
-
-For each snack image capture, it collects the set of processing stage images for debugging and understanding how the snacks are identified. For each blob that the system detected, it will be stored for displaying and training. The colour coded blobs represent, *green* is the new detected blob, *yellow* is the stationary blob, and *red* is the removed blob. By click on each image bar, a larger image will be shown for detail inspections.
-
-![Snack Web Item Display]({{ site.baseurl }}/assets/snack_web_item_display_sm.png)
-
-## RESTful API
-<http://snack-web:8000/api>
-(Replace `snack-web` with your host location.)
-
-The images and operations can also be accessed via RESTful API. The available URI resources are listed in this table.
-
-*Table: snack-web RESTful API*
-
-| API | HTTP | Description |
-|-----|------|-------------|
-| /snacks/ | GET | return all images, could be a lot of images
-| /snacks/snap | GET | take a snapshot and return the latest images. This call takes a snapshot and then processes and returns the generated image.
-| /snacks/id/{id} | GET | return image {id}. This call gets an image by the database id. If it is not found, null is returned.
-| /snacks/state/{class_state} | GET | Get blobs by class_state. This call gets a list of blobs filtered by c1ass_state.
-| /snacks/state | PUT | Update blobs state info by _id. This call accepts a list of id, c1ass, c1ass_state objects and updates the associated blobs in the database.
-| /snacks/class/names | GET | Get list of class names. This call returns a list of the possible class names that a blob can be classified by.
-| /snacks/last | GET | Get last image. This call returns the latest image by date_created DESC. If none exist, null is returned.
-| /snacks/last/{int:n} | GET | Get last n images. This call returns a list of the latest images by date_created DESC.
-| /snacks/last/summary | GET | Get lastest summary. This call returns a summary of the latest processed images including the new, duplicate and removed blobs. If no images exist, it returns null.
+<a href="http://bennycheung.github.io"><img src="{{ site.baseurl }}/assets/author_benny_cheung.jpg" alt="Benny Cheung Contact"></a>
+<br/>
+Benny Cheung’s personal and professional enthusiasm on the topics of computing
+and philosophy. This blog is dedicated to the living computer scientist; to
+understand the beauty of computation is the goal of the blog articles.
+Programming a computer to see surely teaches us the most important lesson that
+creative spirit is in the details. Visit Benny's personal blog at
+[Benny Mind Hack](http://bennycheung.github.io)
