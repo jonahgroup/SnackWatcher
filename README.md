@@ -1,5 +1,10 @@
 # Snack Watcher
-Starting as a [Jonah Group](http://www.jonahgroup.com) working group project, **Snack Watcher** is designed to watch the company's "Snack Table". If there is some new "Snack" presented on the "Snack Table", it could be used to report the event onto a chat channels, email or messaging saying "Snack Happened!", posting an image and trying to classify the snacks that it observed.
+Starting as a fun [Jonah Group](http://www.jonahgroup.com) project,
+the **Snack Watcher** is designed to watch the company's "Snack Table". If there are
+some new "Snacks" presented on the "Snack Table", it can be used to report the
+event onto chat channels, emails or messages saying "Snack Happened!", posting
+an image and trying to classify the snacks that it observed. It supports both as
+web site for interactive snack viewing and RESTful API for programmatic snack querying.
 
 It is open source in hope of advancing the sharing spirit and snacking fun within your company!
 
@@ -194,15 +199,15 @@ The images and operations can also be accessed via RESTful API. The available UR
 
 | API | HTTP | Description |
 |-----|------|-------------|
-| /snacks/ | GET | return all images, could be a lot of images
-| /snacks/snap | GET | take a snapshot and return the latest images. This call takes a snapshot and then processes and returns the generated image.
+| /snacks/ | GET | return all images, that could be a lot of images
+| /snacks/snap | GET | take a snapshot and return the latest image. This call takes a snapshot and returns the processed image.
 | /snacks/id/{id} | GET | return image {id}. This call gets an image by the database id. If it is not found, null is returned.
-| /snacks/state/{class_state} | GET | Get blobs by class_state. This call gets a list of blobs filtered by c1ass_state.
-| /snacks/state | PUT | Update blobs state info by _id. This call accepts a list of id, c1ass, c1ass_state objects and updates the associated blobs in the database.
-| /snacks/class/names | GET | Get list of class names. This call returns a list of the possible class names that a blob can be classified by.
-| /snacks/last | GET | Get last image. This call returns the latest image by date_created DESC. If none exist, null is returned.
-| /snacks/last/{int:n} | GET | Get last n images. This call returns a list of the latest images by date_created DESC.
-| /snacks/last/summary | GET | Get lastest summary. This call returns a summary of the latest processed images including the new, duplicate and removed blobs. If no images exist, it returns null.
+| /snacks/state/{class_state} | GET | Get all blobs matched the given class_state. This call gets a list of blobs filtered by c1ass_state.
+| /snacks/state | PUT | Update blobs state info by _id. This call accepts a list of (id, c1ass, c1ass_state) objects, updates their associated blobs in the database.
+| /snacks/class/names | GET | Get the list of class names. This call returns a list of the class names that a blob can be classified by.
+| /snacks/last | GET | Get the last image. This call returns the latest image by date_created DESC. If none exist, null is returned.
+| /snacks/last/{int:n} | GET | Get the last n images. This call returns a list of the latest n images by date_created DESC.
+| /snacks/last/summary | GET | Get the latest summary. This call returns a summary of the latest processed images including the new, duplicate and removed blobs. If no images exist, it returns null.
 
 
 ### Snapshot Naming Convention
