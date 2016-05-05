@@ -4,7 +4,7 @@ title: About
 date: 2016-04-28 08:31:00
 permalink: /about/
 ---
-# About Snack Watcher
+# Snack Watcher
 
 Starting as a fun [Jonah Group](http://www.jonahgroup.com) project,
 the **Snack Watcher** is designed to watch the company's "Snack Table". If there are
@@ -17,7 +17,7 @@ It is open source in hope of advancing the sharing spirit and snacking fun withi
 
 [Snack Watcher Github Repo](https://github.com/jonahgroup/SnackWatcher)
 
-# About Snack Watcher's Watcher
+# Snack Watcher's Watcher
 
 <a href="http://bennycheung.github.io"><img src="{{ site.baseurl }}/assets/author_benny_cheung.jpg" alt="Benny Cheung Contact"></a>
 <br/>
