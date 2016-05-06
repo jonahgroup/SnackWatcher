@@ -21,9 +21,8 @@ It is open source in hope of advancing the sharing spirit and snacking fun withi
 
 <a href="http://bennycheung.github.io"><img src="{{ site.baseurl }}/assets/author_benny_cheung.jpg" alt="Benny Cheung Contact"></a>
 <br/>
-Benny Cheung’s personal and professional enthusiasm on the topics of computing
-and philosophy. This blog is dedicated to the living computer scientist; to
-understand the beauty of computation is the goal of the blog articles.
-Programming a computer to see surely teaches us the most important lesson that
-creative spirit is in the details. Visit Benny's personal blog at
-[Benny Mind Hack](http://bennycheung.github.io)
+Benny Cheung believes snack watching is an important exercise to understand
+the wide range of computational and philosophical topics. Teaching a computer to
+see surely teaches him the most important lesson that creative spirit is in
+the details. It is so difficult and yet it is so fun.
+Benny also covers many other interesting topics at [Benny Mind Hack Blog](http://bennycheung.github.io).
