@@ -71,7 +71,7 @@ running through the same set of feature extractors to summarize the unknown as a
 vector of features. With the classifier model obtained from training, the unknown
 input can be classified as the result `label` (e.g. cookies).
 
-![Supervised Machine Learning]({{ site.baseurl }}images/recognizing-snacks-using-simplecv/supervised_classification.png)
+![Supervised Machine Learning]({{ site.baseurl }}/images/recognizing-snacks-using-simplecv/supervised_classification.png)
 
 #### (a) Snack Training (Python Script)
 This script has been inspired by this article,
