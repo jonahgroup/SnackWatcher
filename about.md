@@ -26,3 +26,10 @@ the wide range of computational and philosophical topics. Teaching a computer to
 see surely teaches him the most important lesson that creative spirit is in
 the details. It is so difficult and yet it is so fun.
 Benny also covers many other interesting topics at [Benny Mind Hack Blog](http://bennycheung.github.io).
+
+<a href="http://primitivejs.github.io"><img src="{{ site.baseurl }}/assets/author_mark_bloomer.jpg" alt="Mark Bloomer's GitHub Page"></a>
+<br/>
+Mark Bloomer is interested in well developed software using a range of tools and techniques, and snack watching is a
+great project that incorporates many concepts. EVERYONE likes snacks and its useful to track the evolution of the items
+on the table and classify them. The Snack Watcher project incorporates a wide range of popular publicly available tools
+that allows one to learn a wide range of skills which is useful in a constantly evolving industry.
