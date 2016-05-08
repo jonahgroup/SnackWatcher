@@ -1,0 +1,60 @@
+---
+layout: default
+---
+{% for post in paginator.posts %}
+  <article class="content-box post">
+    <header>
+      {% if post.cover %}
+      <div
+        class="postbar-container postbar-image"
+        style="{% if post.cover %}background-image:url({{post.cover}}){% endif %}">
+      </div>
+      {% endif %}
+
+      <h1><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>
+      <p>By {{ post.author }} on <time pubdate datetime="{{ post.date | date: "%Y-%b-%-d" }}">{{ post.date | date: "%b %-d, %Y" }}</time></p>
+    </header>
+    <p class="post-excerpt">
+		{% if post.content contains '<!--excerpt.start-->' and post.content contains '<!--excerpt.end-->' %}
+			{{ ((post.content | split:'<!--excerpt.start-->' | last) | split: '<!--excerpt.end-->' | first) | truncatewords: 300 }}
+		{% else %}
+			{{ post.content | strip_html | truncatewords: 5 }}
+		{% endif %}
+
+		{% capture content_words %}
+			{{ post.content | number_of_words }}
+		{% endcapture %}
+
+		{% capture excerpt_words %}
+		  {{ post.excerpt | number_of_words }}
+		{% endcapture %}
+
+		{% if excerpt_words != content_words %}
+		<p><a class="btn btn-sm btn-primary" href="{{ post.url | prepend: site.baseurl }}#read-more" role="button" style="float: right;">Read more <i class="fa fa-arrow-circle-right"></i></a>
+		</p>
+		{% endif %}
+	</p>
+  </article>
+{% endfor %}
+
+{% if paginator.total_pages > 1 %}
+<nav>
+  <ul class="pager">
+      {% if paginator.previous_page %}
+      <li class="pager-prev">
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" aria-label="Previous">
+          <span aria-hidden="true">&laquo; Newer</span>
+        </a>
+      </li>
+      {% endif %}
+
+      {% if paginator.next_page %}
+      <li class="pager-next">
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" aria-label="Next">
+          <span aria-hidden="true">Older &raquo;</span>
+        </a>
+      </li>
+      {% endif %}
+  </ul>
+</nav>
+{% endif %}

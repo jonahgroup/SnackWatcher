@@ -1,0 +1,60 @@
+# Site settings
+title: Snack Watcher Blog
+meta_description: Blog
+baseurl: "/SnackWatcher" # Subpath, e.g. /blog
+url: "http://jonahgroup.github.io" # Base protocol and hostname
+paginate: 5 # How many posts to show per page
+
+# External Pages
+#external_pages:
+# - title: Themeforest
+#   url: https://www.themeforest.net
+
+#gems
+gems: [jekyll-paginate]
+
+# Google Analytics
+google_analytics: UA-76691604-2
+
+# Author settings
+author_name: Snack Watcher
+author_description: Hungry Mind Blog
+author_image: assets/SnackWatcher.gif
+author_image_width: 128
+author_image_height: 128
+author_image_mime: image/gif
+
+# Share settings
+share_buttons: on
+
+# Comments settings
+disqus_shortname: snackwatcherblog
+
+# Sidebar settings
+sidebar: left # left|right
+social_widget: on
+subscribe_widget: off
+copyright_notice: on
+
+# Social settings
+github_username : jonahgroup/SnackWatcher
+twitter_username : snack_watcher
+facebook_username : SnackWatcher
+reddit_username : SnackWatcher
+rss_username : feed.xml
+
+# Mailchimp.com - Email subscribtion settings
+# Refer to http://kb.mailchimp.com/lists/signup-forms/advanced-form-customization
+# form_action: "//tylercubell.us11.list-manage.com/subscribe/post?u=25ec516894b013df92dca1a8d&amp;id=8906705de6"
+# list_id: "b_25ec516894b013df92dca1a8d_8906705de6"
+
+# Formspreee.io - Contact form settings
+# Note: submit form once to activate
+email: snackwatcher@jonahgroup.com
+
+# Build settings
+markdown: kramdown
+
+# Sass settings
+sass:
+    style: :compressed
