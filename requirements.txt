@@ -1,7 +1,0 @@
-ipython
-Flask
-Flask-Script
-Flask-BasicAuth
-pymongo
-unipath
-SimpleCV
