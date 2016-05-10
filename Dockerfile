@@ -21,5 +21,7 @@ RUN sudo yum -y install python-SimpleCV
 
 # expose the port
 EXPOSE 8000
+# route database connection
+RUN sed -i "s/DB_CONNECT_STRING.*/DB_CONNECT_STRING = mongodb\:\/\/snack-db\:27017/" configuration/environment.ini
 # start snack-web
-#ENTRYPOINT python manage.py runserver
+ENTRYPOINT ["python", "manage.py", "runserver"]
