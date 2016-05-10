@@ -19,7 +19,9 @@ It is open source in hope of advancing the sharing spirit and snacking fun withi
 
 # Snack Watcher's Watcher
 
-<a class="post-author" href="http://bennycheung.github.io"><img src="{{ site.baseurl }}/assets/author_benny_cheung.jpg" alt="Benny Cheung Contact"></a>
+<a class="post-author" href="http://bennycheung.github.io">
+  <img src="{{ site.baseurl }}/assets/author_benny_cheung.jpg" alt="Benny Cheung's GitHub Page">
+</a>
 <br/>
 Benny Cheung believes snack watching is an important exercise to understand
 the wide range of computational and philosophical topics. Teaching a computer to
@@ -27,7 +29,9 @@ see surely teaches him the most important lesson that creative spirit is in
 the details. It is so difficult and yet it is so fun.
 Benny also covers many other interesting topics at [Benny Mind Hack Blog](http://bennycheung.github.io).
 
-<a class="post-author" href="http://primitivejs.github.io"><img src="{{ site.baseurl }}/assets/author_mark_bloomer.jpg" alt="Mark Bloomer's GitHub Page"></a>
+<a class="post-author" href="http://primitivejs.github.io">
+  <img src="{{ site.baseurl }}/assets/author_mark_bloomer.jpg" alt="Mark Bloomer's GitHub Page">
+</a>
 <br/>
 Mark Bloomer is interested in well developed software using a range of tools and techniques, and snack watching is a
 great project that incorporates many concepts. EVERYONE likes snacks and its useful to track the evolution of the items
