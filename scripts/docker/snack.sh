@@ -1,5 +1,5 @@
 #!/bin/sh
-# This script clones the scripts from Git and downloads and runs the SnackWatcher docker containers
+# Checkout the scripts from Git and download and run the SnackWatcher docker containers
 echo [SNACK]
 echo [Remove any existing clones]
 rm -rf SnackWatcher

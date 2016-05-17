@@ -1,4 +1,5 @@
 #!/bin/sh
+# Launch the Docker containers from the images
 echo [RUN]
 sh docker_stop.sh | sed "s/^/\t/"
 echo [Run snack-db]
