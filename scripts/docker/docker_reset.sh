@@ -1,2 +1,4 @@
 #!/bin/sh
-echo /// [RESET]
+# Clear out the generated images and reset the database
+echo [RESET]
+# TODO
