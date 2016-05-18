@@ -6,5 +6,5 @@ rm -rf SnackWatcher
 echo [Clone a fresh copy of SnackWatcher]
 git clone --depth 1 https://github.com/jonahgroup/SnackWatcher.git
 echo [Run SnackWatcher]
-echo [Note: If this fails due to a Docker related issue, try running "sh docker_build.sh" and execute this script again]
-sh SnackWatcher/scripts/docker/docker_run.sh | sed "s/^/\t/"
+cd SnackWatcher/scripts/docker/
+sh docker_run.sh | sed "s/^/\t/"

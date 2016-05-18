@@ -8,8 +8,8 @@ RUN sudo yum -y install git-all
 RUN mkdir /opt/snack
 WORKDIR /opt/snack
 # download the latest from the repository
-RUN git clone -q https://github.com/jonahgroup/SnackWatcher.git
-WORKDIR SnackWatcher
+RUN git clone --depth 1 -q https://github.com/jonahgroup/SnackWatcher.git
+WORKDIR /opt/snack/SnackWatcher
 # remove ipython dependency
 RUN sed -i "s/ipython//" requirements.txt
 # install requirements
@@ -22,7 +22,7 @@ RUN sudo yum -y install python-SimpleCV
 # expose the port
 EXPOSE 8000
 # persist the images
-VOLUME /snack/static/images
+VOLUME /opt/snack/SnackWatcher/static/images
 # route database connection
 RUN sed -i "s/DB_CONNECT_STRING.*/DB_CONNECT_STRING = mongodb\:\/\/snack-db\:27017/" configuration/environment.ini
 # start snack-web
