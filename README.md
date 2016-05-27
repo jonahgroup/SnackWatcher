@@ -15,6 +15,11 @@ It is open source in hope of advancing the sharing spirit and snacking fun withi
 
 posting the latest development articles, interesting researches and on-going discussions on the Snack Watcher project.
 
+## Snack Classifier (optional RESTful API)
+[Snack Classifier](https://github.com/jonahgroup/SnackClassifier),
+which is an independent image classification *Microservice*,
+it can extend the functionality of Snack Watcher.
+
 # Snack Watcher Web
 Before diving into the technical details, a brief overview of how Snack Watcher could benefit the use case of watching a "Snack Table". Also, much effort has been devoted to make it working well with a Raspberry Pi 2 or 3, such that the cost of setup will be minimal and elegant in the geekiest way. The term `snack-web` as a synonym as "Snack Watcher Web" in here.
 
