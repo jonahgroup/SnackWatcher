@@ -13,11 +13,11 @@ docker \
     snackwatcher/snack-db
 echo [Run snack-web]
 docker \
-    run -it --name snack-web \
+    run -d --name snack-web \
     --privileged \
     -p 80:8000 \
     -v snack-web-images:/opt/snack/SnackWatcher/static/images \
     -v ~/snack/logs:/opt/snack/SnackWatcher/logs \
     --device /dev/video0 \
     --link snack-db:snack-db \
-    snackwatcher/snack-web /bin/bash
+    snackwatcher/snack-web
