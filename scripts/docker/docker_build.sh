@@ -9,4 +9,4 @@ fi
 echo [Build snack-db]
 docker build -t snackwatcher/snack-db SnackWatcher/scripts/mongodb
 echo [Build snack-web]
-docker build -t snackwatcher/snack-web SnackWatcher
+docker build -t snackwatcher/snack-web SnackWatcher/scripts/docker

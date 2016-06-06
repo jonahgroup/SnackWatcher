@@ -5,4 +5,4 @@ echo [Stop any running containers]
 sh docker_stop.sh | sed "s/^/\t/"
 echo [Remove volumes]
 sudo rm -rf ~/snack
-docker volume rm snack-web
+docker volume rm snack-web-images

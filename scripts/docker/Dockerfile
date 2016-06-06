@@ -23,7 +23,16 @@ RUN sudo yum -y install python-SimpleCV
 EXPOSE 8000
 # persist the images
 VOLUME /opt/snack/SnackWatcher/static/images
+# persist the logs
+RUN mkdir logs
+VOLUME /opt/snack/SnackWatcher/logs
+
 # route database connection
-RUN sed -i "s/DB_CONNECT_STRING.*/DB_CONNECT_STRING = mongodb\:\/\/snack-db\:27017/" configuration/environment.ini
-# start snack-web
-ENTRYPOINT ["python", "manage.py", "runserver"]
+RUN sed -i "s/DB_CONNECT_STRING = .*/DB_CONNECT_STRING = mongodb\:\/\/snack-db\:27017/" configuration/environment.ini
+# set debugging to false
+RUN sed -i "s/DEBUG = .*/DEBUG = False/" configuration/environment.ini
+
+# Supervisor
+RUN sudo pip install supervisor
+# start the supervisor
+CMD ["/bin/supervisord", "-c" "deployment/supervisor/snack-web.conf"]
