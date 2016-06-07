@@ -37,3 +37,8 @@ Mark Bloomer is interested in well developed software using a range of tools and
 great project that incorporates many concepts. EVERYONE likes snacks and its useful to track the evolution of the items
 on the table and classify them. The Snack Watcher project incorporates a wide range of popular publicly available tools
 that allows one to learn a wide range of skills which is useful in a constantly evolving industry.
+
+<a class="post-author" href="http://www.rj-salvador.com#neat-stuff" target="_blank">
+  <img src="{{ site.baseurl }}/assets/author_rj_salvador.jpg" alt="RJ Salvador's Home Page">
+</a>
+<p>Randolph Salvador (also known as RJ) first got involved in the Snack Watcher project to see just how far Benny can take his crazy ideas. Since then, he has seen those ideas go pretty far, and in a pretty exciting direction. Randolph enjoys learning about UX/UI in software, and jumped at the chance to apply some of those skills to this project. He can usually be found tinkering with CSS and Javascript, or tinkering with music when away from a monitor.</p>
