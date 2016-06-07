@@ -33,4 +33,4 @@ VOLUME /opt/snack/SnackWatcher/logs
 # Supervisor
 RUN sudo pip install supervisor
 # start the supervisor
-CMD ["/bin/supervisord", "-n", "-c" "deployment/supervisor/snack-web.conf"]
+CMD ["supervisord", "-n", "-c", "deployment/supervisor/snack-web.conf"]
