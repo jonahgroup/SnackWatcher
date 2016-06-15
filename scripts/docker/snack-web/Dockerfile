@@ -14,6 +14,8 @@ WORKDIR /opt/snack
 # download the latest from the repository
 RUN git clone --depth 1 -q https://github.com/jonahgroup/SnackWatcher.git
 WORKDIR /opt/snack/SnackWatcher
+# switch to a specific commit (change forces the creation of a new layer)
+RUN git reset --hard 3ef096d793438c6faee3f6db9e56e926455b536f
 # remove ipython dependency
 RUN sed -i "s/ipython//" requirements.txt
 # install requirements
