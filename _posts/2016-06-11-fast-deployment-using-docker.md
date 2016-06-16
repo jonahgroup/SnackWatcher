@@ -14,7 +14,6 @@ category: post
 comments: true
 cover: images/fast-deployment-using-docker/cover.png
 ---
-<!--excerpt.start-->
 
 ![Quick Start]({{ site.baseurl }}/images/fast-deployment-using-docker/body_header.png)
 
@@ -154,9 +153,12 @@ docker rmi -f snackwatcher/snack-db
 docker rmi -f snackwatcher/snack-web
 ```
 
+
 ![Dockerfiles]({{ site.baseurl }}/images/fast-deployment-using-docker/body_dockerfiles.png)
 
+<!--excerpt.start-->
 Docker enables SnackWatcher to be packaged into distinct containers by running them atop the Docker Daemon with the configured particulars baked in! The daemon exposes and routes the ports between the containers and utilizes aliases to allow them to reference each other where ever they may reside - on a Raspberry Pi or a distributed cluster of daemons.
+<!--excerpt.end-->
 
 ## Building the Dockerfile
 
@@ -239,7 +241,7 @@ CMD ["supervisord", "-n", "-c", "deployment/supervisor/snack-web.conf"]
 
 ### snack-db
 
-This image is simply built on top of [mangoraft/mongodb-arm](https://hub.docker.com/r/mangoraft/mongodb-arm/) which is a [Mongo DB](https://www.mongodb.com/) instance build on the [ARM architecture](https://en.wikipedia.org/wiki/ARM_architecture).
+This image is simply built on top of [mangoraft/mongodb-arm](https://hub.docker.com/r/mangoraft/mongodb-arm/) which is a [Mongo DB](https://www.mongodb.com/) instance built on the [ARM architecture](https://en.wikipedia.org/wiki/ARM_architecture).
 
 `FROM mangoraft/mongodb-arm`
 
