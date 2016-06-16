@@ -21,7 +21,8 @@ __NOTE__: This article is confined to installation and operation on a [Raspberry
 
 ## From SD Card image
 
-[snackwatcher_rpi_2016-06-16.img](https://www.anaker.com/snack/snackwatcher_rpi_2016-06-16.img)
+[snackwatcher_rpi_2016-06-16.img.zip](https://www.anaker.com/snack/snackwatcher_rpi_2016-06-16.img.zip)
+Checksum: SHA256 f0f87941482485d4e35dab8ed869c50b
 
 ### Using Windows
 
