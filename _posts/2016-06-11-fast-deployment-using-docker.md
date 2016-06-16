@@ -80,7 +80,7 @@ __NOTE__: Refer to the below Operations section for a more detailed explanation 
 
 We have created a few scripts to control the main functions.
 
-[snackwatcher_scripts.zip](https://www.anaker.com/snack/snackwatcher_scripts.zip)
+[snackwatcher_scripts.zip](http://www.anaker.com/snack/snackwatcher_scripts.zip)
 
 Here is how they work:
 
