@@ -1,0 +1,88 @@
+/* FONT DECLARATIONS */
+
+@font-face {
+    font-family: 'FredokaOne-Regular';
+    src: url('../assets/fonts/FredokaOne-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'OpenSans';
+    font-style: normal;
+    src: url('../assets/fonts/OpenSans-Light.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'OpenSans';
+    font-style: italic;
+    src: url('../assets/fonts/OpenSans-Italic.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'OpenSansRegular';
+    font-style: normal;
+    src: url('../assets/fonts/OpenSans-Regular.ttf') format('truetype');
+}
+
+/* OVERRIDING BASE ELEMENTS */
+
+body {
+    font-family: 'OpenSans', 'Helvetica', 'Arial', sans-serif !important;
+    background: #6EB8EE;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.btn-primary, .btn-success, .btn-info, .btn-warning, .btn-danger, .btn-default {
+    font-family: 'FredokaOne-Regular', 'Helvetica', 'Arial', sans-serif !important;
+}
+
+#sidebar {
+
+    color: #FFF;
+
+    #social a {
+        color: inherit;
+    }
+
+    .content-box {
+        background: none;
+        box-shadow: none;
+        color: inherit;
+
+        #navigation {
+            text-align: left;
+
+            a {
+                color: inherit;
+            }
+        }
+    }
+}
+
+.content-box {
+  border-radius: 5px !important;
+}
+
+.content-box.post {
+    padding: 30px 30px 50px 30px;
+    margin-bottom: 50px;
+
+    .postbar-container.postbar-image {
+        margin-bottom: 15px;
+    }
+
+    h1 {
+        font-weight: normal;
+        margin-bottom: 0;
+
+        a {
+            text-decoration: none;
+            border-bottom: none;
+        }
+    }
+}
+
+footer p {
+    color: #FFF;
+}
