@@ -21,7 +21,9 @@ __NOTE__: This article is confined to installation and operation on a [Raspberry
 
 ## From SD Card image
 
-[snackwatcher_rpi_2016-06-16.img.zip](https://www.anaker.com/snack/snackwatcher_rpi_2016-06-16.img.zip)
+[snackwatcher_rpi_2016-06-16.img.zip](http://www.anaker.com/snack/snackwatcher_rpi_2016-06-16.img.zip)
+
+Size: ~4.5 GB (~29 GB extracted - yikes! There is room for improvement here)
 Checksum: SHA256 f0f87941482485d4e35dab8ed869c50b
 
 ### Using Windows
@@ -40,8 +42,8 @@ Start the Pi and locate it on your network ([How to find your Pi](https://www.ra
 
 ## From Docker image
 
-1. Download `hypriot-rpi-20160306-192317.img.zip` from
-[snackwatcher_rpi_2016-06-16.img](https://www.anaker.com/snack/snackwatcher_rpi_2016-06-16.img) and write it to the SD Card as described above and insert it into the Pi.
+1. Download `hypriot-rpi-20160306-192317.img.zip` from the 
+[Hypriot downloads page](http://blog.hypriot.com/downloads/) and write it to the SD Card as described above and insert it into the Pi.
 2. Start the Pi and locate it on your network ([How to find your Pi](https://www.raspberrypi.org/documentation/remote-access/ip-address.md)). Connect to it using a Terminal Emulator (such as [PuTTy](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html)) and enter the Hypriot image default username/password: pi/raspberry.
 3. Execute the following:
 
@@ -169,7 +171,9 @@ There are 2 Dockerfiles used to run the basic functionality of Snack Watcher: `s
 
 First, we start from a recent version of [Fedora](https://getfedora.org/) (compiled for ARM architecture) as the base.
 
+```
 FROM armv7/armhf-fedora:latest
+```
 
 Then we install the [Simple CV](http://simplecv.org/) layer using the instructions for [installing Simple CV on Fedora](https://github.com/sightmachine/SimpleCV#fedora-20-and-above) (nice and simple!).
 
