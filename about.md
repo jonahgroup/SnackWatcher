@@ -19,7 +19,9 @@ It is open source in hope of advancing the sharing spirit and snacking fun withi
 
 # Snack Watcher Presentation
 At Jonah Group's TNS+ DevOps [06/16/2016], Benny Cheung presented the experience of building Snack Watcher using Microservices.
-The presentation slides can be downloaded from here (in PDF format):
+The presentation slides can be watched and downloaded from here:
+
+[Building Snack Watcher using Microservices - Video](https://www.youtube.com/watch?v=oj94Bdx39U0)
 
 [Building Snack Watcher using Microservices - Presentation Slides]({{ site.baseurl }}/doc/Jonah_TNS_SnackWatcher_Microservices.pdf)
 
