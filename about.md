@@ -23,6 +23,8 @@ The presentation slides can be downloaded from here:
 
 [Building Snack Watcher using Microservices - Presentation Slides]({{ site.baseurl }}/doc/Jonah_TNS_SnackWatcher_Microservices.pdf)
 
+[Building Snack Watcher using Microservices - Video](https://youtu.be/VmZZDJvBHdI)
+
 # Snack Watcher's Watcher
 
 <a class="post-author" href="http://bennycheung.github.io">
